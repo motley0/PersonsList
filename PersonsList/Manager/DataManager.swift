@@ -1,16 +1,6 @@
-//
-//  DataManager.swift
-//  PersonsList
-//
-//  Created by Dmitry Shcherbakov on 04.11.2020.
-//
-
-import Foundation
-
-
 class DataManager {
     
-    private var lastNames = [
+    var lastNames = [
         "Иван",
         "Иосиф",
         "Богдан",
@@ -22,7 +12,8 @@ class DataManager {
         "Алексей",
         "Бронислав"
     ]
-    private var firstNames = [
+    
+    var firstNames = [
         "Якимов",
         "Пищальников",
         "Холодов",
@@ -34,7 +25,8 @@ class DataManager {
         "Ивкин",
         "Мосяков"
     ]
-    private var phones = [
+    
+    var phones = [
         "+7(495)803-92-04",
         "+7(495)715-25-07",
         "+7(495)782-04-16",
@@ -46,7 +38,8 @@ class DataManager {
         "+7(495)138-44-35",
         "+7(495)485-68-75"
     ]
-    private var emails = [
+    
+    var emails = [
         "44dc1ffm@yandex.ru",
         "5ybwi@mail.ru",
         "pvvxl@gmail.com",
@@ -59,18 +52,7 @@ class DataManager {
         "ahbg@yandex.ru"
     ]
     
-    func getPersons() -> [Person] {
-        shufflePersonData()
-
-        return lastNames.enumerated().map() {
-            Person(lastName: $1,
-                   firstName: firstNames[$0],
-                   phone: phones[$0],
-                   email: emails[$0])
-        }
-    }
-    
-    private func shufflePersonData() {
+    func shuffleData() {
         lastNames.shuffle()
         firstNames.shuffle()
         phones.shuffle()

@@ -9,6 +9,8 @@
 /* Begin PBXBuildFile section */
 		3B63447E2552966C007F1562 /* PersonsListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B63447D2552966C007F1562 /* PersonsListViewController.swift */; };
 		3B634482255299EF007F1562 /* PersonInfoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B634481255299EF007F1562 /* PersonInfoViewController.swift */; };
+		3BE1807F2552B50700C2909F /* MainContactsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3BE1807E2552B50700C2909F /* MainContactsViewController.swift */; };
+		3BE180822552BA6A00C2909F /* DetailedPersonsListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3BE180812552BA6A00C2909F /* DetailedPersonsListViewController.swift */; };
 		3BF132C52551FC240051FD70 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3BF132C42551FC240051FD70 /* AppDelegate.swift */; };
 		3BF132C72551FC240051FD70 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3BF132C62551FC240051FD70 /* SceneDelegate.swift */; };
 		3BF132CC2551FC240051FD70 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3BF132CA2551FC240051FD70 /* Main.storyboard */; };
@@ -21,6 +23,8 @@
 /* Begin PBXFileReference section */
 		3B63447D2552966C007F1562 /* PersonsListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PersonsListViewController.swift; sourceTree = "<group>"; };
 		3B634481255299EF007F1562 /* PersonInfoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PersonInfoViewController.swift; sourceTree = "<group>"; };
+		3BE1807E2552B50700C2909F /* MainContactsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainContactsViewController.swift; sourceTree = "<group>"; };
+		3BE180812552BA6A00C2909F /* DetailedPersonsListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailedPersonsListViewController.swift; sourceTree = "<group>"; };
 		3BF132C12551FC240051FD70 /* PersonsList.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PersonsList.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		3BF132C42551FC240051FD70 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		3BF132C62551FC240051FD70 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -85,6 +89,8 @@
 			children = (
 				3B63447D2552966C007F1562 /* PersonsListViewController.swift */,
 				3B634481255299EF007F1562 /* PersonInfoViewController.swift */,
+				3BE1807E2552B50700C2909F /* MainContactsViewController.swift */,
+				3BE180812552BA6A00C2909F /* DetailedPersonsListViewController.swift */,
 			);
 			path = "View Controllers";
 			sourceTree = "<group>";
@@ -197,8 +203,10 @@
 				3B63447E2552966C007F1562 /* PersonsListViewController.swift in Sources */,
 				3B634482255299EF007F1562 /* PersonInfoViewController.swift in Sources */,
 				3BF132E42551FE480051FD70 /* DataManager.swift in Sources */,
+				3BE180822552BA6A00C2909F /* DetailedPersonsListViewController.swift in Sources */,
 				3BF132C52551FC240051FD70 /* AppDelegate.swift in Sources */,
 				3BF132DF2551FD130051FD70 /* Person.swift in Sources */,
+				3BE1807F2552B50700C2909F /* MainContactsViewController.swift in Sources */,
 				3BF132C72551FC240051FD70 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

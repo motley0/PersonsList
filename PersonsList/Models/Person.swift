@@ -17,3 +17,19 @@ struct Person {
         "\(lastName) \(firstName)"
     }
 }
+
+extension Person {
+    
+    static func getPersons() -> [Person] {
+        let manager = DataManager()
+        manager.shuffleData()
+
+        return manager.lastNames.enumerated().map() {
+            Person(lastName: $1,
+                   firstName: manager.firstNames[$0],
+                   phone: manager.phones[$0],
+                   email: manager.emails[$0])
+        }
+    }
+    
+}

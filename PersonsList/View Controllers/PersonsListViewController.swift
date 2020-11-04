@@ -9,12 +9,11 @@ import UIKit
 
 class PersonsListViewController: UITableViewController {
     
-    let persons = DataManager().getPersons()
-
+    var persons: [Person]!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-
-        
+        persons = (tabBarController as! MainContactsViewController).persons
     }
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
@@ -23,7 +22,6 @@ class PersonsListViewController: UITableViewController {
         let personInfoVC = segue.destination as! PersonInfoViewController
         personInfoVC.person = persons[indexPath.row]
     }
-
 
 }
 
