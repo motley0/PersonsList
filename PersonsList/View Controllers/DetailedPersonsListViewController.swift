@@ -13,7 +13,6 @@ class DetailedPersonsListViewController: UITableViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-
         persons = (tabBarController as! MainContactsViewController).persons
     }
     

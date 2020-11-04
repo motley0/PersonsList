@@ -19,7 +19,6 @@ struct Person {
 }
 
 extension Person {
-    
     static func getPersons() -> [Person] {
         let manager = DataManager()
         manager.shuffleData()
@@ -31,5 +30,4 @@ extension Person {
                    email: manager.emails[$0])
         }
     }
-    
 }
